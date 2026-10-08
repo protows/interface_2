@@ -1,0 +1,17 @@
+package lesson_6.interface2;
+public class Start {
+    public static void main(String[] args) {
+        System.setOut(new java.io.PrintStream(System.out, true, java.nio.charset.StandardCharsets.UTF_8));
+        Rectangle rectangle = new Rectangle(4, 6);
+        System.out.println("Площадь прямоугольника 4см*6см = " + rectangle.getArea());
+
+        Square square = new Square(3);
+        System.out.println("Площадь квадрата 3см*3см = " + square.getArea());
+
+        Rhombus rhombus = new Rhombus(4, 3);
+        System.out.println("Площадь ромба со стороной 4см и высотой 3см = " + rhombus.getArea());
+
+        Circle circle = new Circle(2);
+        System.out.println("Площадь круга с радиусом 2см = " + circle.getArea());
+    }
+}
