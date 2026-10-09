@@ -2,13 +2,14 @@ package lesson_6.interface2;
 
 public class Circle implements Figure{
     // Радиус круга
-    private final double r;
+    private final double radius;
 
-    public Circle(double r) {
-        this.r = r;
+    public Circle(double radius) {
+        this.radius = radius;
     }
 
+    @Override
     public double getArea() {
-        return Math.PI * r * r;
+        return Math.PI * radius * radius;
     }
 }
