@@ -3,12 +3,9 @@ package lesson_6.interface2;
 public class Rectangle extends Parallelogram{
   
 
-    public Rectangle(double a, double h) {
-        super(a,h);
+    public Rectangle(double width, double height) {
+        super(width,height);
     }
 
-    @Override
-    public double getArea() {
-        return a * h;
-    }
+  
 }
