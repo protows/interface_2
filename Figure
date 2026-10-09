@@ -1,8 +1,21 @@
 package lesson_6.interface2;
-// В качестве корня иерархии всех фигур необходимо использовать заготовку интерфейса Figure
-public interface Figure {
-    // Ниже напишите объявление метода/ов, которые будут общими для всей иерархии классов
-   
-    public double getArea();
 
+public abstract class Parallelogram  implements Figure{
+     // Длина стороны ромба
+    double height;
+    // Высота ромба
+    double width;
+
+  
+   public Parallelogram(double height, double width) {
+        this.height = height;
+        this.width=width;
+    }
+   
+   @Override
+    public double getArea() {
+        return height * width;
+    }
+    
+   
 }
