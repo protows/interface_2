@@ -3,12 +3,8 @@ package lesson_6.interface2;
 public class Rhombus extends Parallelogram{
  
 
-    public Rhombus(double a, double h) {
-        super(a,h);
+    public Rhombus(double width, double height) {
+        super(width,height);
     }
 
-    @Override
-    public double getArea() {
-        return a * h;
-    }
 }
