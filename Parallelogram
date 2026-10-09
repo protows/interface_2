@@ -2,17 +2,19 @@ package lesson_6.interface2;
 
 public abstract class Parallelogram  implements Figure{
      // Длина стороны ромба
-    double a=0.00;
+    double height;
     // Высота ромба
-    double h=0.00;
+    double width;
 
-  public Parallelogram(double a) {
-        this.a = a;
-    }
   
-   public Parallelogram(double a, double h) {
-        this.a = a;
-        this.h =h;
+   public Parallelogram(double height, double width) {
+        this.height = height;
+        this.width=width;
+    }
+   
+   @Override
+    public double getArea() {
+        return height * width;
     }
     
    
